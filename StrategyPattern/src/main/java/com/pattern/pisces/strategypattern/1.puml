@@ -1,0 +1,36 @@
+@startuml
+interface com.pattern.pisces.strategypattern.strategy.IStrategy {
++ String getName()
++ double priceCalculate(double)
+}
+
+class com.pattern.pisces.strategypattern.strategy.impl.DiscountStrategy {
+- String name
++ String getName()
++ double priceCalculate(double)
+}
+
+class com.pattern.pisces.strategypattern.strategy.impl.NoDiscouuntStrategy {
+- String name
++ String getName()
++ double priceCalculate(double)
+}
+
+class com.pattern.pisces.strategypattern.strategy.impl.PriceReductionStrategy {
+- String name
++ String getName()
++ double priceCalculate(double)
+}
+
+class com.pattern.pisces.strategypattern.printer.Printer {
+- IStrategy strategy;
++ void setStrategy(IStrategy)
++ public IStrategy getStrategy()
++ double totalPrice(double)
+}
+
+com.pattern.pisces.strategypattern.strategy.IStrategy <|.. com.pattern.pisces.strategypattern.strategy.impl.DiscountStrategy
+com.pattern.pisces.strategypattern.strategy.IStrategy <|.. com.pattern.pisces.strategypattern.strategy.impl.NoDiscouuntStrategy
+com.pattern.pisces.strategypattern.strategy.IStrategy <|.. com.pattern.pisces.strategypattern.strategy.impl.PriceReductionStrategy
+com.pattern.pisces.strategypattern.strategy.IStrategy <-- com.pattern.pisces.strategypattern.printer.Printer
+@enduml

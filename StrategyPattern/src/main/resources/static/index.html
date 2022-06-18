@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="goodsinfo.css" rel="stylesheet" type="text/css">
+    <title>双鱼玩具-商品详情</title>
+
+    <script>
+        window.onload = function () {
+            var nav1 = document.getElementsByClassName("toys-nav1")[0];
+            var nav2 = document.getElementsByClassName("toys-nav2")[0];
+            var nav3 = document.getElementsByClassName("toys-nav3")[0];
+            var c1 = document.getElementById("c1");
+            var c2 = document.getElementById("c2");
+            var c3 = document.getElementById("c3");
+
+            c1.onclick = function () {
+                nav1.style.display = "block";
+                nav2.style.display = "block";
+                nav3.style.display = "block";
+            }
+
+            c2.onclick = function () {
+                nav1.style.display = "none";
+                nav2.style.display = "block";
+                nav3.style.display = "block";
+            }
+
+            c3.onclick = function () {
+                nav1.style.display = "none";
+                nav2.style.display = "none";
+                nav3.style.display = "block";
+            }
+        }
+    </script>
+</head>
+
+<body>
+<!-- 页眉 -->
+<div class="index">
+    <nav class="nav">
+        <div id="website-icon">
+            <a href="#"><img src="img-src/website-icon.png" height="40px" /></a>
+        </div>
+        <div>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="goodslist.html">品牌概览</a></li>
+                <li id="index-father" style="position: relative;">
+                    <a href="goodslist.html">打印机分类</a>
+                    <ul id="index-son">
+                        <li><a href="goodslist.html">毛绒布偶</a></li>
+                        <li><a href="goodslist.html">模型机械</a></li>
+                        <li><a href="goodslist.html">益智组合</a></li>
+                        <li><a href="goodslist.html">智慧感应</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">二手市场</a></li>
+                <li><a href="#">关于我们</a></li>
+            </ul>
+        </div>
+        <div id="search-box">
+            <form action="#">
+                <input type="search" placeholder="探索最新打印机">
+                <input type="submit" value="搜索">
+            </form>
+        </div>
+        <div id="login">
+            <ul>
+                <li><a href="#">登录</a></li>
+                <li><a href="#">注册</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class="goods-info">
+
+    <div id="top-title">
+        <h2 id="title">打印机</h2>
+    </div>
+    <div id="goods-main">
+        <div class="info-img">
+            <div id="img-toy">
+                <h6>&nbsp;</h6>
+            </div>
+        </div>
+        <div class="product-con">
+            <h2>松下打印机</h2>
+            <p class="sale-desc">
+                色彩丰富/画面真实 节能 质量保证
+            </p>
+            <div class="company-info">
+                松下直营专卖店
+            </div>
+            <p class="price-info">
+                原价：2300元
+            </p>
+
+            <div class="activity-box">
+                <div class="flow-box">
+                        <span class="flow-tag">
+                            (优惠策略)<span class="flow-tag" id="strategy"></span>
+                        </span>
+                    <span class="flow-name">
+                            优惠价格:<span class="flow-name" id="price"></span>元
+                    </span>
+                </div>
+            </div>
+
+            <div class="address-box">
+                <div class="product-address">
+                    <i class="iconfont iconfont-location"></i>
+                    <div class="address-con">
+                        <div>
+                            <div class="address-info">
+                                <span>北京</span><span>北京市</span><span>海淀区</span><span>清河街道</span>
+                            </div>
+                            <a href="#" class="edit">修改</a>
+                        </div>
+                        <div class="info">
+                            <div class="desc"><span style="color: #BF2E50; margin-left: -20px;">有现货</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buy-option">
+                <div class="buy-box-child">
+                    <div class="option-box">
+                        <div class="title">选择颜色</div>
+                        <ul class="clearfix">
+                            <li class="active"><a href="#">雅致黑</a></li>
+                            <li class="active"><a href="#">晴空蓝</a></li>
+                            <li class="active"><a href="#">湖光绿</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="btn-box">
+                <div class="sale-btn">
+                    <a href="#" class="btn">加入购物车</a>
+                </div>
+                <div class="favorite-btn">
+                    <a class="btn-like" href="#">
+                        <i class="iconfont default"></i>喜欢
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="width:1500px">
+    <div class="guessyoulike">
+        <div class="guessyoulike-title">
+            <ul style="list-style: none;">
+                <li>猜你喜欢</li>
+            </ul>
+        </div>
+        <div class="box">
+            <a href="#">
+                <img src="img-src/bg-img/2356c32be21629f6.jpg" alt="小米" title="小米耳机">
+                <p class="review">快递牛，玩具质感爆棚，颜色真的好看，下次还来买！</p>
+                <div class="appraise">来自于用户1173的评价</div>
+                <div class="info">
+                    变装松鼠
+                    <em>|</em>
+                    <i class="fee">99.9元</i>
+                </div>
+            </a>
+        </div>
+        <div class="box">
+            <a href="#">
+                <img src="img-src/bg-img/2356c32be21629f6.jpg" alt="小米" title="小米耳机">
+                <p class="review">快递牛，玩具质感爆棚，颜色真的好看，下次还来买！</p>
+                <div class="appraise">来自于用户1173的评价</div>
+                <div class="info">
+                    变装松鼠
+                    <em>|</em>
+                    <i class="fee">99.9元</i>
+                </div>
+            </a>
+        </div>
+        <div class="box">
+            <a href="#">
+                <img src="img-src/bg-img/2356c32be21629f6.jpg" alt="小米" title="小米耳机">
+                <p class="review">快递牛，玩具质感爆棚，颜色真的好看，下次还来买！</p>
+                <div class="appraise">来自于用户1173的评价</div>
+                <div class="info">
+                    变装松鼠
+                    <em>|</em>
+                    <i class="fee">99.9元</i>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="details">
+        <div class="details-title">
+            <ul>
+                <li><a id="c1">玩具概况</a></li>
+                <li><a id="c2">售后服务</a></li>
+                <li><a id="c3">商品评价</a></li>
+            </ul>
+        </div>
+        <div class="details-main" style="min-height: 1600px;">
+            <div class="toys-nav1">
+                <h2>玩具概况</h2>
+                <div id="toys-title-1">
+                    <h6>品牌：迪士尼</h6>
+                    <div class="details-items">
+                        <ul>
+                            <li>商品名称：</li>
+                            <li>长度：</li>
+                            <li>宽度：</li>
+                            <li>高度：</li>
+                        </ul>
+                    </div>
+                    <div class="details-items">
+                        <ul>
+                            <li>商品编号：</li>
+                            <li>系列：</li>
+                            <li>颜色：</li>
+                            <li>材质：</li>
+                        </ul>
+                    </div>
+                    <div class="details-items">
+                        <ul>
+                            <li>商品重量：</li>
+                            <li>洗涤条件：</li>
+                            <li>适用性别：</li>
+                            <li>适用人群：</li>
+                        </ul>
+                    </div>
+                    <div class="details-items">
+                        <ul>
+                            <li>商品产地：</li>
+                            <li>玩具类型：</li>
+                            <li>功能：</li>
+                            <li>其他说明：</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-img" id="bg-img1">
+
+                </div>
+                <div class="bg-img" id="bg-img2">
+
+                </div>
+            </div>
+            <div class="toys-nav2">
+                <h2>售后服务</h2>
+                <div class="toys-nav2-word">
+                    <h2>厂商服务</h2>
+                    <p></p>
+                </div>
+                <div class="toys-nav2-word">
+                    <h2>网站承诺</h2>
+                    <p>双鱼玩具在线平台卖家销售并发货的商品，由平台卖家提供发票和相应的售后服务。请您放心购买！<br>
+                        注：因厂家会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，本司不能确保客户收到的货物与商城图片、产地、附件说明完全一致。只能确保为原厂正货！并且保证与当时市场上同样主流新品一致。若本商城没有及时更新，请大家谅解！
+                    </p>
+                </div>
+                <div class="toys-nav2-word">
+                    <h2>正品玩具</h2>
+                    <p>双鱼玩具在线平台向您保证所售商品均为正品行货，双鱼玩具在线平台自营商品开具机打发票或电子发票。</p>
+                </div>
+                <div class="toys-nav2-word">
+                    <h2>无忧退货</h2>
+                    <p>客户购买双鱼玩具在线平台自营商品7日内（含7日，自客户收到商品之日起计算），在保证商品完好的前提下，可无理由退货。（部分商品除外，详情请见各商品细则）</p>
+                </div>
+                <a href="#">
+                    <div class="toys-nav2-contact">
+                        <strong>联系双鱼玩具客服</strong>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="toys-nav2-contact">
+                        <strong>联系商家客服</strong>
+                    </div>
+                </a>
+                <div style="height: 70px;"></div>
+            </div>
+            <div class="toys-nav3">
+                <h2>商品评价</h2>
+                <div class="toys-nav3-alluser">
+                    <div class="toys-nav3-user">
+                        <img src="img-src/头像.png" alt="">
+                        <b>用户123</b>
+                        <i>大会员</i>
+                    </div>
+                    <div class="toys-nav3-comment">
+                        <p>
+                            非常感谢双鱼玩具在线平台的服务及商品，看见这次搞活动，买了一大推布玩偶，每一个布玩偶都是可爱至极啊，欣欣这个牌子的玩偶做工材质都是非常不错的，赶上双鱼玩具活动价购入这是划算极了，价格实惠不说品质比在外面买的那些，质量好的不是一点点，每一个都喜欢得很哦！摸起来手感极好，没有一点点的异味，做工也是惟妙惟肖，摆在客厅沙发上每个来的朋友都说可爱，我想每个人都会喜欢的，在等着活动价还会再次购买一推的，到时沙发坐一排哈哈，想想都觉得可爱！谢谢双鱼玩具在线平台。谢谢商家的好商品，感谢配送的物流人员们！
+                        </p>
+                        <div>
+                            <i>小身材</i>
+                            <b>2020-07-01 16:07</b>
+                            <a class="toys-nav3-comment-110" href="#">举报</a>
+                            <a class="toys-nav3-comment-agree" href="#">
+                                3
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="toys-nav3-alluser">
+                    <div class="toys-nav3-user">
+                        <img src="img-src/头像.png" alt="">
+                        <b>用户123</b>
+                        <i>大会员</i>
+                    </div>
+                    <div class="toys-nav3-comment">
+                        <p>
+                            非常感谢双鱼玩具在线平台的服务及商品，看见这次搞活动，买了一大推布玩偶，每一个布玩偶都是可爱至极啊，欣欣这个牌子的玩偶做工材质都是非常不错的，赶上双鱼玩具活动价购入这是划算极了，价格实惠不说品质比在外面买的那些，质量好的不是一点点，每一个都喜欢得很哦！摸起来手感极好，没有一点点的异味，做工也是惟妙惟肖，摆在客厅沙发上每个来的朋友都说可爱，我想每个人都会喜欢的，在等着活动价还会再次购买一推的，到时沙发坐一排哈哈，想想都觉得可爱！谢谢双鱼玩具在线平台。谢谢商家的好商品，感谢配送的物流人员们！
+                        </p>
+                        <div>
+                            <i>小身材</i>
+                            <b>2020-07-01 16:07</b>
+                            <a class="toys-nav3-comment-110" href="#">举报</a>
+                            <a class="toys-nav3-comment-agree" href="#">
+                                3
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="toys-nav3-alluser">
+                    <div class="toys-nav3-user">
+                        <img src="img-src/头像.png" alt="">
+                        <b>用户123</b>
+                        <i>大会员</i>
+                    </div>
+                    <div class="toys-nav3-comment">
+                        <p>
+                            非常感谢双鱼玩具在线平台的服务及商品，看见这次搞活动，买了一大推布玩偶，每一个布玩偶都是可爱至极啊，欣欣这个牌子的玩偶做工材质都是非常不错的，赶上双鱼玩具活动价购入这是划算极了，价格实惠不说品质比在外面买的那些，质量好的不是一点点，每一个都喜欢得很哦！摸起来手感极好，没有一点点的异味，做工也是惟妙惟肖，摆在客厅沙发上每个来的朋友都说可爱，我想每个人都会喜欢的，在等着活动价还会再次购买一推的，到时沙发坐一排哈哈，想想都觉得可爱！谢谢双鱼玩具在线平台。谢谢商家的好商品，感谢配送的物流人员们！
+                        </p>
+                        <div>
+                            <i>小身材</i>
+                            <b>2020-07-01 16:07</b>
+                            <a class="toys-nav3-comment-110" href="#">举报</a>
+                            <a class="toys-nav3-comment-agree" href="#">
+                                3
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</div>
+<div class="goods-info">
+    <div id="top-title2">
+        <h2 id="title2">选择打折模式</h2>
+    </div>
+    <select class="active1" name="strategy" id="strategyselect">
+        <option value="noDiscountStrategy">无折扣</option>
+        <option value="priceReductionStrategy">立减金额</option>
+        <option value="discountStrategy">打折</option>
+    </select>
+    <button type="button" onclick="click1()">更改</button>
+</div>
+<div class="footer">
+    <div id="website-icon">
+        <a href="#">
+            <img src="img-src/website-icon.png" height="40px" />
+        </a>
+    </div>
+    <div>
+        <p id="intro">
+            双鱼玩具在线交易平台致力于打造优质、一流的商品服务。
+        </p>
+    </div>
+    <div id="info">
+        <h6>Copyright © 2021 双鱼玩具在线. All rights reserved.</h6>
+        <p>浙ICP备91830910号-25 浙公网安备 02003301000124号</p>
+    </div>
+</div>
+</body>
+
+<script type="text/javascript">
+    var socket;
+
+        if(typeof(WebSocket) == "undefined") {
+            console.log("您的浏览器不支持WebSocket");
+        }else{
+            console.log("您的浏览器支持WebSocket");
+            //实现化WebSocket对象，指定要连接的服务器地址与端口  建立连接
+            var socketUrl=`ws://localhost:8090/webSocket/${Math.random()*10000}/${1}`;
+            console.log(socketUrl);
+            if(socket!=null){
+                socket.close();
+                socket=null;
+            }
+            socket = new WebSocket(socketUrl);
+            //打开事件
+            socket.onopen = function() {
+                console.log("websocket已打开");
+            };
+            //获得消息事件
+            socket.onmessage = function(msg) {
+                var dd=JSON.parse(msg.data)
+                //发现消息进入    开始处理前端触发逻辑
+                console.log(dd)
+                document.getElementById('strategy').innerHTML=dd.strategy_
+                document.getElementById('price').innerHTML=dd.price
+            };
+            //关闭事件
+            socket.onclose = function() {
+                console.log("websocket已关闭");
+            };
+            //发生了错误事件
+            socket.onerror = function() {
+                console.log("websocket发生了错误");
+            }
+
+        }
+
+    function click1() {
+        console.log(123);
+        var obj = document.getElementById('strategyselect'); //定位id
+        var index = obj.selectedIndex; // 选中索引
+        var text = obj.options[index].text; // 选中文本
+        var value = obj.options[index].value; // 选中值
+        socket.send(
+            value
+        )
+    }
+</script>
+
+</html>

@@ -1,0 +1,482 @@
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.index {
+    background-color: #fff;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+}
+
+#index-son {
+    opacity: 0;
+    height: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 5px 17px #424141;
+    z-index: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+#index-father:hover #index-son {
+    opacity: 1;
+    display: block;
+    visibility: visible;
+    height: 260px;
+}
+
+#index-son li {
+    display: block;
+}
+
+#index-son li a {
+    line-height: 60px;
+    margin: 0 18px;
+}
+
+.nav ul li {
+    display: inline-block;
+}
+
+.nav ul a {
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+    line-height: 70px;
+    margin: 0 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border-bottom: 5px solid transparent;
+}
+
+.nav ul a:hover {
+    color: #BF2E50;
+    border-bottom: 5px solid #BF2E50;
+    border-radius: 3px;
+}
+
+.nav div {
+    display: inline-block;
+}
+
+.nav {
+    padding: 0 10%;
+    box-shadow: 0px 1px 17px #888888;
+    min-width: 1200px;
+}
+
+.nav #search-box input[type="search"] {
+    font-family: "微软雅黑";
+    background: #ffffff;
+    border: solid 0px #BF2E50;
+    border-bottom: solid 1px #BF2E50;
+    height: 30px;
+    width: 240px;
+    display: inline-block;
+    margin-left: 20px;
+    border-radius: 0;
+    opacity: 0.8;
+    outline: none;
+}
+
+
+.nav #search-box input[type="search"]:hover,
+.nav #search-box input[type="search"]:focus,
+.nav #search-box input[type="submit"]:hover {
+    opacity: 1;
+}
+
+.nav #search-box input[type="submit"] {
+    font-family: "微软雅黑";
+    background-color: #BF2E50;
+    color: #fff;
+    border: solid 1px #BF2E50;
+    height: 30px;
+    display: inline-block;
+    padding: 0 10px;
+    border-radius: 3px;
+    opacity: 0.9;
+}
+
+.nav #login {
+    float: right;
+}
+
+#website-icon a img {
+    vertical-align: middle;
+}
+
+.main {
+    margin-top: 100px;
+}
+/*  */
+/* 轮播容器 */
+.img_wrap {
+    width: 1400px;
+    height: 700px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0px 1px 17px #424141;
+}
+
+.img_wrap ul li {
+    float: left;
+}
+
+/* 轮播索引 */
+.img_wrap .img_index {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1;
+}
+
+.img_wrap .img_index ul li {
+    width: 16px;
+    height: 16px;
+    background: gray;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 4px;
+    text-decoration: none;
+    list-style: none
+}
+
+.img_wrap .img_index ul li.on {
+    background: #BF2E50;
+}
+
+/* 轮播图片容器 */
+.img_wrap .img_lunbo {
+    width: 1400px;
+    height: 700px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+/* animate */
+@keyframes fadeio {
+
+    /*设置内容由显示变为隐藏*/
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.img_lunbo img {
+    width: 1400px;
+    height: 700px;
+    animation: fadeio 4s ease-in-out;
+}
+
+/* FamousBrand */
+.FamousBrand {
+    margin: 80px 60px;
+    min-width: 900px;
+}
+
+.FamousBrand h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.FamousBrand h4 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #888888;
+    font-weight: normal;
+}
+
+
+.FamousBrand #ul #li {
+    display: inline-block;
+    margin: 20px 1%;
+    padding: 30px 0;
+    width: 17.5%;
+    border-radius: 20px;
+    background-color: #fff;
+    min-width: 100px;
+    box-shadow: 0px 1px 10px #888888;
+    transition: all 0.8s ease;
+}
+.FamousBrand #ul #li:hover {
+    transform:scale(1.06);
+}
+
+.FamousBrand #ul #li img {
+    display: block;  
+    margin: 0px auto;
+    height: 100px;
+    width: 100px;
+}
+
+.FamousBrand #ul #li a {
+    text-decoration: none;
+    color: black;
+}
+.FamousBrand #ul #li a b{
+    display: block;  
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* toys */
+.toys {
+    border-top-right-radius: 150px;
+    border-top-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    border-bottom-left-radius: 150px;
+    background-image: url(img-src/bg2.png), linear-gradient(rgb(196, 227, 241), #BF2E50);
+    background-blend-mode: lighten;
+    height: 700px;
+    padding: 60px 7%;
+    min-width: 900px;
+}
+
+.toys #img-toy {
+    width: 46%;
+    height: 582px;
+    float: left;
+    background-image: url(img-src/toys.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 20px;
+    box-shadow: 0px 1px 17px #424141;
+}
+
+.toys #toy-model {
+    width: 50%;
+    float: right;
+}
+
+.toys #toy-model #toy-click {
+    padding: 30px;
+    background-color: rgb(0,72,148);
+    border-radius: 20px;
+    box-shadow: 0px 1px 17px #424141;
+}
+
+.toys #toy-model #toy-click h2{
+    font-size: 25px;
+    text-align: left;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.toys #toy-model #toy-click a {
+    text-decoration: none;
+    background-color: #BF2E50;
+    border-radius: 24px;
+    box-shadow: 0px 1px 17px #424141;
+    padding: 10px 16px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    opacity: 0.9;
+}
+
+.toys #toy-model #toy-click a:hover {
+    opacity: 1;
+}
+
+.toys #toy-model .toy-categroy {
+    display: inline-block;
+    transition: all 0.8s ease;
+}
+
+.toys #toy-model .toy-categroy:hover {
+    transform: scale(1.05);
+}
+
+.toy-categroy {
+    text-decoration: none;
+    padding: 30px 20px ;
+    width: 15%;
+    border-radius: 20px;
+    background-color: #fff;
+    margin-top: 50px;
+    margin-right: 12px;
+    box-shadow: 0px 1px 10px #888888;
+}
+
+.toy-categroy a {
+    text-decoration: none;
+    color: #222121;
+    text-align: center;
+    width: 100%;
+}
+
+.toy-categroy img {
+    width: 70px;
+    display: block;
+    margin: 0 auto;
+}
+
+.toy-categroy b {
+    display: block;  
+    margin: 0px auto;
+    margin-top: 15px;
+}
+
+/* market */
+#Markets-model {
+    margin: 0 auto;
+    padding: 0 8%;
+}
+
+.Markets-items {
+    display: inline-block;
+    padding: 30px 20px ;
+    width: 20.2%;
+    height: 200px;
+    border-radius: 20px;
+    background-color: #fff;
+    margin-top: 50px;
+    margin-right: 12px;
+    min-width: 180px;
+    box-shadow: 0px 1px 10px #888888;
+    transition: all 0.8s ease;
+}
+
+.Markets-items:hover {
+    transform: scale(1.05);
+}
+
+.Markets-items a {
+    text-decoration: none;
+    color: #222121;
+}
+
+.Markets-items a b {
+    display: block;
+    margin: 15px 0;
+}
+
+.Markets-items img {
+    width: 70px;
+    display: block;
+}
+
+.Markets-items p {
+    color: #888888;
+    height: 40px;
+}
+
+.Markets-items strong {
+    display: block;
+    margin-top: 30px;
+    text-align: right;
+}
+
+.footer {
+    background-color: #BF2E50;
+    padding: 50px 200px;
+}
+
+.footer #intro {
+    font-size: 12px;
+    margin: 20px 0;
+    color: #f0e7e7;
+}
+
+.footer #info h6,
+.footer #info p {
+    font-size: 12px;
+    color: #f0e7e7;
+}
+
+#big-box {
+    text-align: center;
+    margin: 0 auto;
+    min-width: 1300px;
+}
+
+.box {
+    margin: 10px 10px;
+    width: 190px;
+    height: 350px;
+    background-color: #f3f1f1;
+    border-radius: 10px;
+    transition: all 0.8s ease;
+    box-shadow: 0px 1px 10px #888888;
+    display: inline-block;
+}
+
+.box:hover {
+    transform: scale(1.03);
+}
+
+.box img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.box .review {
+    margin: 30px;
+    font-size: 14px;
+    height: 30px;
+}
+
+.info {
+    position: relative;
+    margin: 0 30px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.box .appraise {
+    font-size: 12px;
+    margin: 10px 30px 8px 30px;
+    color: rgb(182, 180, 180);
+    text-align: left;
+}
+
+em {
+    position: absolute;
+    right: 40px;
+    text-decoration: none;
+    font-style: normal;
+    margin: 0 10px;
+    color: gainsboro;
+}
+
+.box .fee {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    font-weight: normal;
+    color: #BF2E50;
+    text-align: right !important; 
+    font-weight: bold;
+    text-decoration: none;
+    font-style: normal;
+}
+
+.box a {
+    text-decoration: none;
+    color: black;
+}
+
+

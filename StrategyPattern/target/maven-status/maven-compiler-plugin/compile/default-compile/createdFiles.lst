@@ -1,0 +1,6 @@
+com\pattern\pisces\strategypattern\strategy\impl\NoDiscountStrategy.class
+com\pattern\pisces\strategypattern\strategy\impl\DiscountStrategy.class
+com\pattern\pisces\strategypattern\StrategyPatternApplication.class
+com\pattern\pisces\strategypattern\strategy\IStrategy.class
+com\pattern\pisces\strategypattern\strategy\impl\PriceReductionStrategy.class
+com\pattern\pisces\strategypattern\printer\Printer.class

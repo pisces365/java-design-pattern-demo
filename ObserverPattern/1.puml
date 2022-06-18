@@ -1,0 +1,42 @@
+@startuml
+interface com.pattern.pisces.observerpattern.observer.Observer {
++ void getChangeInfo(Stock)
+}
+
+class com.pattern.pisces.observerpattern.observer.impl.KlineDiagramObserver {
+- KStockAllData kStockAllData
+- Subject subject
++ void getChangeInfo(Stock)
+}
+
+class com.pattern.pisces.observerpattern.observer.impl.LineChartObserver {
+- List<String> time
+- List<Double> price
+- Subject subject
++ void getChangeInfo(Stock)
+}
+
+
+interface com.pattern.pisces.observerpattern.subject.Subject {
++ addObserver(Observer)
++ notifyObservers()
++ giveNewStock(Stock)
+}
+
+class com.pattern.pisces.observerpattern.subject.impl.StockExchange {
+- boolean change
+- Stock stock
+- ArrayList<Observer> arrayList
++ addObserver(Observer)
++ notifyObservers()
++ giveNewStock(Stock)
+}
+
+com.pattern.pisces.observerpattern.observer.Observer <|.. com.pattern.pisces.observerpattern.observer.impl.KlineDiagramObserver
+com.pattern.pisces.observerpattern.observer.Observer <|.. com.pattern.pisces.observerpattern.observer.impl.LineChartObserver
+com.pattern.pisces.observerpattern.observer.Observer <-- com.pattern.pisces.observerpattern.subject.Subject
+
+com.pattern.pisces.observerpattern.subject.Subject <|.. com.pattern.pisces.observerpattern.subject.impl.StockExchange
+com.pattern.pisces.observerpattern.subject.Subject o-- com.pattern.pisces.observerpattern.observer.impl.KlineDiagramObserver
+com.pattern.pisces.observerpattern.subject.Subject o-- com.pattern.pisces.observerpattern.observer.impl.LineChartObserver
+@enduml
